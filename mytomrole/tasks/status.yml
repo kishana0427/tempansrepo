@@ -1,0 +1,19 @@
+---
+- name: is-enbled tomcat
+  command: systemctl is-enabled tomcat9
+  register: enblst
+- name: debug is-enb
+  debug: 
+    msg: "{{enblst}}"
+- name: start tom9
+  command: systemctl start tomcat9
+  register: starttom
+- name: debug tom start
+  debug:
+    msg: "{{starttom}}"
+- name: check status 
+  command: service tomcat9 status
+  register:  chkst
+- name: debug status
+  debug: 
+    msg: "{{chkst}}"

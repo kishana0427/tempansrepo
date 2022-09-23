@@ -1,0 +1,5 @@
+---
+- name: tom-users
+  template:
+    src: templates/tom-user.j2
+    dest: /opt/tomcat/conf/tomcat-users.xml 

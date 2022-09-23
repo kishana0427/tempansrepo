@@ -1,0 +1,7 @@
+---
+- name: checking java version
+  command: java -version
+  register: javaver
+- name: debug java
+  debug:
+    msg: "{{javaver}}"

@@ -1,0 +1,4 @@
+---
+- name: Open ports for Apache Tomcat Server
+  command:
+    cmd: sudo ufw allow from any to any port 8080 proto tcp

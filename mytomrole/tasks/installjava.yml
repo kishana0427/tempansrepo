@@ -1,0 +1,6 @@
+---
+- name: installing java
+  apt:
+    name: openjdk-11-jre-headless
+    state: present
+    

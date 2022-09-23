@@ -1,0 +1,5 @@
+---
+- name: copy hostmgr-context
+  template:
+    src: templates/hostmgr-contest.j2
+    dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml

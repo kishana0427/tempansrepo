@@ -1,0 +1,3 @@
+---
+- name: update tomcat-users
+  command: cat users >> /etc/tomcat9/tomcat-users.xml

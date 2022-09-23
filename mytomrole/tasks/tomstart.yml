@@ -1,0 +1,5 @@
+---
+- name: reload demon
+  command: systemctl daemon-reload
+- name: enable tomcat
+  command: systemctl enable tomcat

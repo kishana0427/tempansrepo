@@ -1,0 +1,6 @@
+---
+- name: tomcat-user
+  template:
+    src: template/users.j2
+    dest: /etc/tomcat9/tomcat-users.xml
+

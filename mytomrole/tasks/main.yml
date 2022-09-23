@@ -1,0 +1,12 @@
+---
+- include_tasks: installjava.yml
+- include_tasks: checkjavaver.yml
+- include_tasks: createtomuser.yml
+- include_tasks: installtomcat.yml
+- include_tasks: permision.yml
+- include_tasks: tomservice.yml
+- include_tasks: tomstart.yml
+- include_tasks: tom-users.yml
+  #- include_tasks: hostmgr-context.yml
+  #- include_tasks: mgr-context.yml
+  #- include_tasks: restarttom.yml

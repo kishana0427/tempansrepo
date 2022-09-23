@@ -1,0 +1,14 @@
+---
+- name: create tomcat group
+  group:
+    name: tomcat
+    state: present
+
+- name: create tomcat user 
+  user:
+    name: tomcat
+    group: tomcat
+    home: /opt/tomcat
+    shell: /usr/sbin/nologin
+    state: present
+    
